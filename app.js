@@ -50,6 +50,61 @@ document.head.appendChild(s);
       
 
 
+//  IMAGE SLIDER
+
+//Right button
+document.getElementById("right-arrow").addEventListener("click", (event)=> {
+event.preventDefault();
+console.log(counter)
+start = true
+
+counter++
+if (counter <= 5) {
+
+
+wrapper.style.background = 'url(images/HOMEPAGE/sliders/Image-'+counter+'.jpg) no-repeat top center';
+wrapper.style.backgroundSize = 'cover';
+ mainTitle.textContent = tiltes[counter-1]
+
+}else if (counter === 6){
+
+wrapper.style.background = 'url(images/HOMEPAGE/sliders/Image-1.jpg) no-repeat top center';
+wrapper.style.backgroundSize = 'cover';
+counter = 1
+mainTitle.textContent = tiltes[counter-1]
+}
+console.log(counter)
+}
+
+);
+//Left button
+ document.getElementById("left-arrow").addEventListener("click", (event)=> {
+event.preventDefault();
+console.log(counter)
+
+if (counter === 1 && start === false){
+   counter--
+   counter = 5
+   start = true
+
+ wrapper.style.background = 'url(images/HOMEPAGE/sliders/Image-'+counter+'.jpg) no-repeat top center'
+ wrapper.style.backgroundSize = 'cover'
+ mainTitle.textContent = tiltes[counter-1]
+}else if ( counter > 1) {
+   counter --
+wrapper.style.background = 'url(images/HOMEPAGE/sliders/Image-'+counter+'.jpg) no-repeat top center'
+wrapper.style.backgroundSize = 'cover'
+mainTitle.textContent = tiltes[counter-1]
+}else if(counter === 1 && start===true) {
+  counter = 5
+wrapper.style.background = 'url(images/HOMEPAGE/sliders/Image-'+counter+'.jpg) no-repeat top center'
+wrapper.style.backgroundSize = 'cover'
+mainTitle.textContent = tiltes[counter-1]
+}
+console.log(counter)
+}
+
+);
 
 
   
