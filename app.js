@@ -6,6 +6,15 @@ const navbar = document.querySelector('.navbar');
 const navbarLinks = document.getElementsByClassName('navbar__link');
 let clicked = false;
 var s = document.createElement('style');
+// Slider elements
+const tiltes = ["Primena najsavremenijih aparata i procedura Fizikalne Medicine", "Individualni pristup svakom pacijentu","Mesto koje vas vraća u pokret","Vodite računa o svom telu","Kompletna fizikalna terapija"]
+let counter = 1
+const wrapper = document.getElementById("wrapper");
+let start = false;
+let mainTitle = document.getElementById("main_title");
+//Dotts elements by className
+let dottBtns = Object.values(document.getElementsByClassName('dottBtn'));
+
 s.type = 'text/css';
 const mobileMenu = () => {
 
