@@ -118,4 +118,63 @@ dottBtns.forEach(element => { element.addEventListener('click', () => {
   
   
  
+// Lightbox Gallery
+(function() {
+
+
+   var images = document.querySelectorAll('.fleximg');
+   var container = document.querySelector('.lightbox');
+   var item = document.querySelector('.lightbox-item');
+    var close = document.querySelector('.lightbox-close');
+    var btnleft = document.querySelector('.btnLeft');
+    var btnright = document.querySelector('.btnRight');
+   
+   var imgArray = [];
+   var counter = 0;
+   
+   images.forEach((img) => {
+     imgArray.push(img.src);
+   
+   });
+   
+   images.forEach(function(elem) {
+     elem.addEventListener('click',function(event) {
+         var src = event.target.src;
+         counter = imgArray.indexOf(src)
+         item.style.backgroundImage = `url(${src})`
+         container.classList.add('show'); // bez tacke kod .add('imenekeklasa')
+   
+     })
+   
+    close.addEventListener('click', function() {
+        container.classList.remove('show');
+    })
+   
+   })
+   
+   btnleft.addEventListener('click', function(){
+   
+    counter--
+   
+    if (counter < 0) {
+   
+        counter = imgArray.length-1
+   }
+      item.style.backgroundImage = `url(${imgArray[counter]})`
+  })
+   
+    btnright.addEventListener('click', function(){
+   
+    counter++
+   
+     if (counter > imgArray.length-1) {
+    counter = 0
+   
+   }
+        item.style.backgroundImage = `url(${imgArray[counter]})`
+    })
+   
+   
+   })();
+   
 
