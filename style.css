@@ -234,15 +234,32 @@ table {
             grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
           
         }
-        
+.fleximg {
+width: 100%;
+height: 100%;
+transform: scale(1.15);
+transition: transform 0.5s, opacity 0.5s;
+}
+
+.box img:hover {
+  opacity:1;
+  transform: scale(1.03);
+}
+
+#cenovnik{
+  width: 100%;
+  height: 200vh;
+  background: url('images/CENOVNIK.jpg') no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+      
            
        
-       .fleximg {
-          width: 100%;
-         
-
-        }
-           
+   
 
 
         /*Media Query */
@@ -537,24 +554,4 @@ table {
 
         }
 
-.fleximg {
-width: 100%;
-height: 100%;
-transform: scale(1.15);
-transition: transform 0.5s, opacity 0.5s;
-}
-.box img:hover {
-  opacity:1;
-  transform: scale(1.03);
-}
-#cenovnik{
-  width: 100%;
-  height: 200vh;
-  background: url('images/CENOVNIK.jpg') no-repeat center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-        
+  
