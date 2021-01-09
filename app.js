@@ -106,7 +106,15 @@ console.log(counter)
 
 );
 
-
+// Dott buttons
+dottBtns.forEach(element => { element.addEventListener('click', () => {
+   var number = element.getAttribute("data-img")
+   wrapper.style.background = 'url(images/HOMEPAGE/sliders/Image-'+number+'.jpg) no-repeat top center'
+   wrapper.style.backgroundSize = 'cover'
+   mainTitle.textContent = tiltes[number-1]
+   // Update current image position
+   counter = number
+})});
   
   
  
