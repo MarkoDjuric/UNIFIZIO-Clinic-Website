@@ -45,6 +45,7 @@ table {
 * {
     box-sizing: border-box;
     font-family: 'Exo', sans-serif;
+    touch-action: pan-y;
 }
 
 
