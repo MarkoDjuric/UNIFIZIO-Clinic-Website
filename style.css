@@ -59,15 +59,20 @@ table {
             min-width: 50%;
             height: 100vh;
             overflow: auto;
+            animation: fadeVisibility 0.5s;
         }
-        
+
+          #wrapper h1 {
+             color: var(--orange);
+          }
+
         .wraper img {
             position: absolute;
             width: 100%;
             height: auto;
-            /* max-width: 100%; */
-            /* height: auto; */
-        }
+          }
+          
+    
         /* Navigation */
         
         .navbar {
@@ -75,7 +80,7 @@ table {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            position: fixed;
+            position: absolute;
             top: 0;
             width: 100%;
         }
@@ -105,12 +110,27 @@ table {
         .navbar__menu :last-child {
             border-right: none;
         }
-        
+
+          @keyframes fadeVisibility {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
         @keyframes drop {
             0% {}
             10% {
                 transform: translateY(50px)
             }
+        }
+
+        .header h1 {
+            font-size: 35px;
+            color: white;
+
         }
         /* Hero Section */
         
@@ -127,9 +147,13 @@ table {
             justify-content: space-between;
             align-items: center;
             flex-direction: row;
-            margin-top: 15rem;
-            top: 200px;
+            margin-top: 30rem;
+            top: 10%;
         }
+
+     #winner {
+        padding-right:1em;
+    }
         
         .social-btns img {
             padding-right: 1px;
