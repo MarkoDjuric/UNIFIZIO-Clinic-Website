@@ -7,4 +7,4 @@ Flexbox and Media Queries <br>
              2. Interactivity: JavaScript (carousel with indicators, dropdown menu, smooth scroll, modal gallery and animations)<br>
 
            
-![Screenshot](unifizio.png)
+![Screenshot](Unifizio.png)
