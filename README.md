@@ -1,5 +1,5 @@
 # Unifizio-Clinic
-![Screenshot](favicon/icons8-html-5.svg) ![Screenshot](favicon/icons8-css3.svg)  ![Screenshot](favicon/icons8-javascript.svg)  <br><br>
+![Screenshot](favicon/icons8-html-5.svg) ![Screenshot](favicon/icons8-css3.svg)  ![Screenshot](favicon/icons8-javascript.svg)  <br>
   <hr>
 
 This project is my second fully responsive and mobile first website for a client. The theme of project is a physiotherapist clinic.
