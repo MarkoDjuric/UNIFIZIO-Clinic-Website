@@ -530,7 +530,134 @@ width: 22px;
     
 }       
 
-      
+  
+@media screen and (min-width:750px) and (max-width:1220px) {
+
+.banners {
+    position: relative;
+    top:-280px;
+    padding-bottom: 20%;
+
+}
+
+#aboutus {
+    height:125vh;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+#aboutus h2{
+    
+margin-bottom: 23px;
+
+}
+#sta_lecimo {
+height:130vh;
+
+}
+#terapija {
+    position: relative;
+    padding-bottom: 2em;
+    height:220vh;
+    width: 100%;
+    
+    
+    }
+.fizikalna_terapija {
+width: 80%;
+padding:0.938em;
+letter-spacing: 1px;
+
+}  
+.fizikalna_terapija h2 {
+    color: var(--orange);
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-top: 3em;
+    margin-bottom: 2.5em;
+}
+.fizikalna_terapija h3 {
+    color: var(--orange);
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-bottom: 0.5em;
+}
+.fizikalna_terapija p {
+    font-size: 1rem;
+    color: var(--white);
+    line-height: 1.3;
+    /* margin-bottom: 0.625em; */
+        padding-bottom: 2em; 
+}
+#cenovnik {
+    height:180vh;
+    }
+     /* KONTAKT SECTION */  
+ #kontakt{
+
+height: 150vh;
+
+}
+#kontakt h1{
+    font-size: 1.3rem;
+     font-weight: bold;
+
+    padding-bottom: 40px; 
+   }
+
+ 
+   #map {
+    position: relative;
+ width: 70%;
+
+   }
+   #soc_contact {
+       justify-content: center;
+       align-items: center;
+
+    margin-right: 10em;
+   }
+   #map img {
+    width: 100%;
+   }
+ .title_wraper {
+flex-direction: row;
+}
+
+   .title_wraper {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+   }
+    
+   #soc_contact {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px; 
+    margin:0 10px 10px 10px; 
+    width:40%;
+   font-size: 0.97rem;
+   justify-content:baseline;
+   align-items:baseline;
+   }
+   #soc_contact p{
+    margin-bottom: 10px;
+    font-size: 1rem;
+   
+   }
+   #soc_contact img{
+   width: 22px;
+   }
+   #soc_contact span{
+    display:none;
+   }
+   .btn {
+    width: 6%;
+}
+.btn:hover {
+   transform: scale(1.5);
+} 
+}      
            
        
             /* Media Query */
