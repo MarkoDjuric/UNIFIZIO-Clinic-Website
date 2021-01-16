@@ -453,102 +453,39 @@ transform: translateX(-60%);
     transform: scale(1.5);
  } 
           
- 
+ /*Media Query 1220 PX */ 
+@media screen and (min-width: 1220px) {
+#terapija {
+    height: 130vh;
+}
+#terapija h2 {
+    position: relative;
+    top:-110px;
+}
+#terapija p {
+    margin-bottom: 15px;
+    line-height: 1;
+}
+#cenovnik {
+    height: 100vh;
+}
+
+       /* KONTAKT SECTION */  
+#kontakt {
+    height: 100vh;
+}
+
+  #kontakt h1 {
+font-size: 1.3rem;
+font-weight: bold;
+padding-bottom: 40px; 
+}
+
     
 
       
            
        
-   
-
-
-        /*Media Query */
-        
-        @media screen and (max-width: 1220px) {
-            body.active {
-                overflow-y: hidden;
-                overflow-x: hidden;
-            }
-            .marketing img {
-                width: 50px;
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                align-items: space-between;
-            }
-            .dotts img {
-                width: 5px;
-                padding: 3px;
-            }
-            .social-btns img {
-                width: 35px;
-                margin: 1px;
-            }
-            .content {
-                font-size: 9px;
-            }
-            .navbar__link {
-                display: flex;
-                align-content: center;
-                justify-content: center;
-            }
-            #logo {
-                width: 90%;
-                position: relative;
-                left: 0.0 1rem;
-                top: -0.75rem;
-            }
-            .navbar__menu {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(7, 60px);
-                position: absolute;
-                width: 100%;
-                top: -1000px;
-            }
-            .navbar__menu.active {
-                top: 100%;
-                opacity: 0.9;
-                z-index: 99;
-                height: 100vh;
-                font-size: 1.5rem;
-                background: black;
-            }
-            .navbar__toggle .bar {
-                width: 30px;
-                height: 3px;
-                margin: 5px auto;
-                transition: all 0.3s ease-in-out;
-                background: var(--white);
-                display: block;
-                cursor: pointer;
-            }
-            #mobile-menu {
-                position: absolute;
-                top: 15%;
-                right: 5%;
-                transform: translate(5%, 20%);
-            }
-            #mobile-menu.is-active .bar:nth-child(2) {
-                opacity: 0;
-            }
-            #mobile-menu.is-active .bar:nth-child(1) {
-                transform: translateY(8px) rotate(45deg);
-            }
-            #mobile-menu.is-active .bar:nth-child(3) {
-                transform: translateY(-8px) rotate(-45deg);
-            }
-            .arrow img {
-                width: 70%;
-            }
-            h1 {
-                font-size: 3.250em;
-                color: #FFFFFF;
-                font-weight: 100;
-            }
-            .social-btns img {
-                padding: 2px;
-            }
             /* Media Query */
             @media screen and (max-width: 750px) {
                 .content {
