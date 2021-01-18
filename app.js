@@ -196,3 +196,6 @@ dottBtns.forEach(element => { element.addEventListener('click', () => {
          }
       }
    }
+   
+      // function call
+   makeNavLinksSmooth();
