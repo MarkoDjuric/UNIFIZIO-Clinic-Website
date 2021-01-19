@@ -936,3 +936,361 @@ width:10%;
 }
 
 } 
+
+
+@media screen and (max-width: 412px) {
+
+body h2{
+font-size: 18px;
+}
+.navbar .navbar__logo {
+min-width: 45%;
+margin-right: 1%;
+}
+.navbar {
+margin-top: 0.125em;
+}
+h1 {
+font-size: 2rem;
+}
+.content {
+font-size: 0.7em;
+margin-top: 170px;
+}
+.banners {
+margin-top: 0px;
+position: relative;
+top: 50px;
+flex-direction: column;
+}
+
+.dots {
+order: -1;
+}
+    
+#aboutus{
+
+width: 100%;
+height: 130vh;
+
+
+}
+
+
+#aboutus .o_nama h2 {
+color: var(--orange);
+font-size: 1.3rem;
+font-weight: bold;
+position: relative;
+top:1em
+
+}
+
+
+.o_nama p {
+font-size: 1rem;
+color: var(--white);
+line-height: 1.3;
+margin-top: 10px;
+
+}
+
+.o_nama{
+width: 90%;
+letter-spacing: 1px;
+padding:2px;
+margin-top: 50px;
+}
+#sta_lecimo{
+position: relative;
+height: 130vh;
+}
+.sta_lecimo{
+width: 95%;
+
+position: absolute;
+top:10%;
+letter-spacing: 0.063;
+}
+.sta_lecimo li{
+font-size: 1rem;
+color:var(--white);
+line-height: 1.3;
+padding-left: 1em;
+padding-bottom: 0.1em;
+}
+.sta_lecimo  h2{
+color: var(--orange);
+font-size: 1.3rem;
+font-weight: 500;
+} 
+#terapija{
+width: 100%;
+height: 220vh;
+margin-top: 0;
+}
+.fizikalna_terapija {
+position: absolute;
+top:-40px;
+width: 95%;
+
+padding:0.938em;
+letter-spacing: 0.063rem;
+}  
+.fizikalna_terapija h2{
+color: var(--orange);
+font-size: 1.3rem;
+font-weight: 500;
+margin-top: 3.125em;
+padding-bottom:0.6em
+}
+.fizikalna_terapija h3{
+color: var(--orange);
+font-size: 1.2rem;
+font-weight: 300;
+padding-bottom: 0.6em;
+}
+.fizikalna_terapija p {
+font-size: 0.9rem;
+color: var(--white);
+line-height: 1.3;
+padding-bottom: 1em;
+
+}
+
+#cenovnik{
+min-height: 120vh;
+}
+#cenovnik .cene_usluga h2 {
+color: var(--orange);
+font-size: 1.1rem;
+padding-bottom: 1.875em;
+font-weight: 500;
+margin-bottom: 0.2em;
+
+}
+.cene_usluga p {
+font-size: 1rem;
+color: var(--white);
+line-height: 1.3;
+padding: 0.3em;
+}
+.cene_usluga span{
+font-size:1rem;
+}
+
+.cene_usluga{
+width: 100%;
+letter-spacing: 0.063rem;
+}
+
+
+/* KONTAKT SECTION */
+#kontakt{
+    height: 135vh;
+    width: 100%;
+    position: absolute;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+#kontakt h1{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--orange);
+    margin-top: 1px;
+    padding-bottom: 20px;
+}
+.title_wraper {
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    top: -6.25em;
+}
+#soc_contact {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    /* margin:0 10px 10px 10px */
+    width:85%;
+    font-size: 0.8rem;
+    justify-content:center;
+    align-items:baseline;
+}
+#soc_contact p{
+    margin-bottom: 7px;
+
+}
+#soc_contact img{
+    width: 22px;
+}
+#soc_contact span{
+    display:none;
+    }
+    #map {
+    position: absolute;
+    left: 13%;
+    bottom:-2%;
+    width:30%;
+}
+#map img {
+    width: 220%;
+   
+}
+
+.lightbox {
+    width: 100%;
+    height: 90vh;
+}
+    
+ 
+ 
+  
+.lightbox-item {
+    flex-direction: column; 
+    width: 90%;
+justify-content:space-between;
+align-items:center;
+  
+}
+.btnRight img{
+ 
+    width: 60%;
+    flex-direction: column;
+    position: relative;
+    top:-50px;
+    left:10px;
+  
+}
+.btnLeft img{
+    position: relative;
+    left:7px;
+    top:-50px;
+    width: 60%;
+    flex-direction: column;
+  
+}
+.lightbox-close img {
+    width: 50%;
+    position: relative;
+    bottom: 50px;
+
+}
+.btn {
+
+    width: 14%;
+    
+}
+   
+}
+
+@media screen and (max-width: 300px) {
+
+#aboutus {
+height: 160%;
+}
+#terapija {
+height: 280vh;
+}
+#sta_lecimo {
+    height: 150vh;
+}
+#kontakt{
+height: 130vh;
+width: 100%;
+position: absolute;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.title {
+margin-top: 0;
+}
+#kontakt h1{
+font-size: 1.3rem;
+font-weight: bold;
+color: var(--orange);
+margin-top: 11px;
+
+}
+.title_wraper {
+flex-direction: column;
+position: relative;
+top: -6.25em;
+}
+#cenovnik {
+    height: 170vh;
+}
+#soc_contact {
+display: flex;
+flex-direction: column;
+font-size: 13px;
+/* margin:0 10px 10px 10px */
+width:80%;
+font-size: 0.8rem;
+justify-content:baseline;
+align-items:baseline;
+}
+#soc_contact p{
+margin-bottom: 10px;
+font-size: 0.8rem;
+}
+#soc_contact img{
+width: 22px;
+}
+#soc_contact span{
+display:none;
+}
+#map {
+position: absolute  ;
+left: 13%;
+bottom:-4em;
+width:30%;
+padding-top: 2px;
+}
+#map img {
+width: 270%;
+margin-top: 10px;
+transition: transform .2s;
+}
+#map img:hover {
+transform: scale(1.7);
+}
+.opis {
+display: none;
+}
+.lightbox {
+width: 100%;
+height: 100vh;
+}
+.lightbox-item {
+flex-direction: column; 
+width: 100%;
+justify-content:space-between;
+align-items:center;
+}
+
+.btnRight img{
+width: 60%;
+flex-direction: column;
+position: relative;
+top:-40px;
+left:10px;
+}
+.btnLeft img{
+position: relative;
+left:7px;
+top:-40px;
+width: 60%;
+flex-direction: column;
+}
+.lightbox-close img {
+width: 35%;
+position: relative;
+bottom: 80px;
+}
+.btn {
+    width: 13%;
+}
+
+}
