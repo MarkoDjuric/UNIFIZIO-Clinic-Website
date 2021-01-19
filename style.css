@@ -1,248 +1,254 @@
+
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block;
+display: block;
 }
 
 body {
-    line-height: 1;
-    font-family: 'Exo', sans-serif;
+
+font-family: 'Exo', sans-serif;
 }
 
 ol, ul {
-    list-style: none;
+list-style: none;
 }
 
 blockquote, q {
-    quotes: none;
+quotes: none;
 }
 
 blockquote:before, blockquote:after, q:before, q:after {
-    content: '';
-    content: none;
+content: '';
+content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+border-collapse: collapse;
+border-spacing: 0;
 }
 
- :root {
-    --orange: rgb(246, 124, 31);
-    --white: #FFF;
-    --silver: #CCC;
+/* NORMALIZE CSS */
+:root {
+--orange: rgb(246, 124, 31);
+--white: #FFF;
+--silver: #CCC;
 }
 
 * {
-    box-sizing: border-box;
-    font-family: 'Exo', sans-serif;
-    touch-action: pan-y;
+box-sizing: border-box;
+font-family: 'Exo', sans-serif;
+touch-action: pan-y;
+}
+
+#wrapper {
+display: block;
+justify-content: space-evenly;
+flex-direction: column;
+position: absolute;
+top: 0;
+width: 100%;
+min-width: 50%;
+height: 100vh;
+overflow: auto;
+animation: fadeVisibility 0.5s;
 }
 
 
-        .wrapper {
-            display: block;
-            justify-content: space-evenly;
-            flex-direction: column;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            min-width: 50%;
-            height: 100vh;
-            overflow: auto;
-            animation: fadeVisibility 0.5s;
-        }
+#wrapper h1{
+color: var(--orange);
+}
 
-          #wrapper h1 {
-             color: var(--orange);
-          }
+#wraper img {
+position: absolute;
+width: 100%;
+height: 100vh;
 
-        .wraper img {
-            position: absolute;
-            width: 100%;
-            height: auto;
-          }
-          
-    
-        /* Navigation */
-        
-        .navbar {
-            height: 68px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: absolute;
-            top: 0;
-            width: 100%;
-        }
-        
-        .navbar__logo {
-            padding: 0rem 1rem;
-            margin-top: 37px;
-            margin-left: 0px;
-        }
-        
-        .navbar__menu {
-            font-size: 1.1em;
-            font-weight: 500;
-            padding-top: 10px;
-        }
-        
-        .navbar__link {
-            text-decoration: none;
-            color: var(--orange);
-            margin-right: 0.8rem;
-            border-right: 3px solid rgb(255, 255, 255);
-            line-height: 60px;
-            padding-right: 0.8rem;
-            animation: drop 3s ease forwards;
-        }
-        
-        .navbar__menu :last-child {
-            border-right: none;
-        }
+}
 
-          @keyframes fadeVisibility {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
+/* Navigation */
+.navbar {
+height: 68px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: absolute;
+top: 0;
+width: 100%;
+}
 
-        @keyframes drop {
-            0% {}
-            10% {
-                transform: translateY(50px)
-            }
-        }
 
-        .header h1 {
-            font-size: 35px;
-            color: white;
+.navbar__logo {
+padding: 0rem 1rem;
+margin-top: 37px;
+margin-left: 0px;
+}
 
-        }
-        /* Hero Section */
-        
-        .content {
-            width: 60%;
-            text-align: center;
-            margin: 0 auto;
-            margin-top: 230px;
-            line-height: 5.125em;
-        }
-        
-        .banners {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: row;
-            margin-top: 30rem;
-            top: 10%;
-        }
+.navbar__menu {
+font-size: 1.1em;
+font-weight: 500;
+padding-top: 10px;
+}
 
-     #winner {
-        padding-right:1em;
-    }
-        
-        .social-btns img {
-            padding-right: 1px;
-        }
-        
-        .arrow {
-            position: absolute;
-            top: 40%;
-            cursor: pointer;
-        }
-        
-        #left-arrow {
-            left: 0;
-            margin-left: 80px;
-        }
-        
-        #right-arrow {
-            right: 0;
-            margin-right: 80px;
-        }
+.navbar__link {
+text-decoration: none;
+color: var(--orange);
+margin-right: 0.8rem;
+border-right: 3px solid rgb(255, 255, 255);
+line-height: 60px;
+padding-right: 0.8rem;
+animation: drop 3s ease forwards;
+}
 
-      .dottBtn { 
-           cursor: pointer;
-      }
+.navbar__menu :last-child {
+border-right: none;
+}
 
-            /* Content */
-        
-        #aboutus {
-            width: 100%;
-            height: 100vh;
-            background: url('images/O NAMA.jpg') no-repeat center;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-        
-        .o_nama h2 {
-            font-size:1.563rem;
-            font-weight: bold;
-            color: var(--orange);
-            position: relative;
-            top:-80px;
-       }
+@keyframes fadeVisibility {
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+}
 
-        
+@keyframes drop {
+0% {}
+10% {
+    transform: translateY(50px)
+}
+}
+
+.header h1 {
+font-size: 35px;
+color: white;
+}
+
+/* Hero Section */
+
+.content {
+width: 60%;
+text-align: center;
+margin: 0 auto;
+margin-top: 230px;
+line-height: 5.125em;
+}
+
+.banners {
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: row;
+margin-top: 30rem;
+padding-bottom: 10%;
+}
+
+#winner {
+  padding-right:1em;
+}
+
+.social-btns img {
+padding-right: 1px;
+}
+
+.arrow {
+position: absolute;
+top: 40%;
+cursor: pointer;
+}
+
+#left-arrow {
+    left: 0;
+    margin-left: 80px;
+}
+
+#right-arrow {
+    right: 0;
+    margin-right: 80px;
+}
+.dottBtn{
+  cursor: pointer;
+}
+/* Content */
+
+#aboutus {
+/* min-width: 392px; */
+width: 100%;
+height: 100vh;
+background: url('images/O NAMA.jpg') no-repeat center;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+.o_nama h2 {
+font-size:1.563rem;
+font-weight: bold;
+color: var(--orange);
+position: relative;
+top:-80px;    
+}
+
 .o_nama, .sta_lecimo  {
-  margin: 0 auto;
-  color: var(--white);
-  font-size: 1.25rem;
-  line-height: 30px;
-  width: 50%;
+margin: 0 auto;
+color: var(--white);
+font-size: 1.25rem;
+line-height: 30px;
+width: 50%;
 }
+
 .o_nama {
- text-align: center;
+text-align: center;
 }
+
 #sta_lecimo {
-  display: flex;
-  width: 100%;
-  height: 100vh;
- 
-  background: url('images/STA\ LECIMO.jpg') no-repeat center;
-  background-size: cover;
-  justify-content:center;
-  align-items:center;
+display: flex;
+width: 100%;
+height: 100vh;
+background: url('images/STA\ LECIMO.jpg') no-repeat center;
+background-size: cover;
+justify-content:center;
+align-items:center;
 }
+
 #sta_lecimo h2 {
 color: var(--orange);
 font-weight: bold;
 }
+
 .naslov_sta_lecimo {
-  margin: 0 auto;
-  width: 60%;
+margin: 0 auto;
+width: 60%;
 }
+
 .naslov_rehabilitacija {
-  margin: 0 auto;
-  width: 63%;
+margin: 0 auto;
+width: 63%;
 }
+
 #terapija  {
-  width: 100%;
-  height:250vh;
-  background: url('images/FIZIKALNA\ TERAPIJA.jpg') no-repeat center;
-  background-size: cover;
-  display: flex;
-  justify-content:center;
-  align-items:center;
-  position: relative;
+width: 100%;
+height:250vh;
+background: url('images/FIZIKALNA\ TERAPIJA.jpg') no-repeat center;
+background-size: cover;
+display: flex;
+justify-content:center;
+align-items:center;
+position: relative;
 }
+
 .fizikalna_terapija {
 margin: 0 auto;
 text-align: center;
@@ -251,78 +257,87 @@ color: var(--white);
 font-size: 1.25rem;
 line-height: 19px;
 }
+
 #terapija h2, h3 {
-  color: var(--orange);
+color: var(--orange);
 }
+
 #terapija .fizikalna_terapija h2 {
-  font-size: 25px;
-  font-weight: bold;
-  padding-bottom: 20px;
-  margin-top: 120px;
+font-size: 25px;
+font-weight: bold;
+padding-bottom: 20px;
+margin-top: 120px;
 }
+
 #terapija .fizikalna_terapija h3 {
-  font-size: 18px;
-  padding-bottom: 30px;
-  font-weight: bold;
-}        
+font-size: 18px;
+padding-bottom: 30px;
+font-weight: bold;
+} 
+
 #imgs {
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 justify-items: center;
 grid-gap: 0;
 background-color:#234D5D;
-
 }
+
 .box {
 width: 100%;
 height: 100%;
 overflow: hidden;
 }
+
 .fleximg {
 width: 100%;
 height: 100%;
 transform: scale(1.15);
 transition: transform 0.5s, opacity 0.5s;
 }
+
 .box img:hover {
-  opacity:1;
-  transform: scale(1.03);
+opacity:1;
+transform: scale(1.03);
 }
+
 #cenovnik{
-  width: 100%;
-  height: 200vh;
-  background: url('images/CENOVNIK.jpg') no-repeat center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+width: 100%;
+height: 200vh;
+background: url('images/CENOVNIK.jpg') no-repeat center;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
 }
+
 #cenovnik .cene_usluga {
-  margin: 0 auto;
-  text-align: center;
-  font-size: 1.25rem;
-  color: var(--white);
-
+margin: 0 auto;
+text-align: center;
+font-size: 1.25rem;
+color: var(--white);
 }
+
 #cenovnik .cene_usluga h2{
-  font-size:1.5625em;
-  color: var(--orange);
-  margin-bottom: 2.25em;
-  font-weight: 500;
+font-size:1.5625em;
+color: var(--orange);
+margin-bottom: 2.25em;
+font-weight: 500;
 }
-.cene_usluga span {
-  color: var(--orange);
-  font-size: 1.25rem;
-  line-height: 2.063em;
-  font-weight: 500;
 
+.cene_usluga span {
+color: var(--orange);
+font-size: 1.25rem;
+line-height: 2.063em;
+font-weight: 500;
 }
+
 #cenovnik .paketi {
-  margin-bottom:2.5em;
-} 
- 
-  /* KONTAKT SECTION */
+margin-bottom:2.5em;
+}
+
+/* KONTAKT SECTION */
 #kontakt{
 width: 100%;
 height: 100vh;
@@ -333,19 +348,19 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 position: relative;
-
 }
 
 #kontakt .title_wraper {
 width: 90%;
 display: flex;  
-
 justify-content: center;
 align-items: center;
 margin: 0 auto;
 height: 50vh;
 flex: 1;
 }
+
+
 
 #kontakt .title {
 width: 100%;
@@ -354,16 +369,20 @@ text-align: center;
 font-size: 1rem;
 flex-direction: column;
 }
+
 #soc_contact {
 width: 40%;
 }
+
 #soc_contact p{
 padding-bottom: 0.7em;
 color: var(--white);
 }
+
 #soc_contact img{
 margin-right: 0.7em;
 }
+
 #soc_contact span{
 color:var(--orange);
 padding-right:0.4em;
@@ -372,17 +391,20 @@ padding-right:0.4em;
 text-decoration: none;
 color: var(--white);
 }
-#map {
+
+map {
 width: 30%;
 }
+
 #map img {
 width: 110%;
 transition: transform .2s;
 }
+
 #map img:hover {
 transform: scale(1.3); 
 }
-        
+      
 /* Lightbox gallery */
 
 .lightbox {
@@ -398,8 +420,8 @@ z-index: 999;
 background: rgba(0, 0, 0, 0.6) !important;
 display: none;
 overflow: auto !important;
-
 }
+
 .lightbox-item {
 display: flex;
 
@@ -410,49 +432,133 @@ height: 80vh;
 background-position: center;
 background-size: cover;
 }
+
 .show {
 display:flex;
 justify-content: center;
 align-items: center;
 }
+
 .lightbox-holder {
 position: relative;
-
 }
+
 
 .lightbox-close {
 font-size: 3rem;
 transition: all 1s ease-in-out;
 cursor: pointer;
 }
+
 .lightbox-close:hover {
 color: var(--mainYellow);
 }
+
 .btnLeft {
- 
 transform: translateX(-50%);
 }
+
+
 .btnRight {
 transform: translateX(-60%);
 } 
 
 .btn {
-   
-    width: 3%;
-    position: fixed;
-    bottom: 10px;
-    right: 30px;
- 
-    transition: transform .2s;
-    text-decoration: none;
-    padding: 5px;
-    text-align: center;
+width: 3%;
+position: fixed;
+bottom: 10px;
+right: 30px;
+transition: transform .2s;
+text-decoration: none;
+padding: 5px;
+text-align: center;
 }
-   
- .btn:hover {
-    transform: scale(1.5);
- } 
-          
+
+.btn:hover {
+transform: scale(1.5);
+} 
+
+/*Media Query 1220 PX */ 
+@media screen and (min-width: 1220px) {
+#terapija {
+  height: 130vh;
+}
+
+#terapija h2 {
+  position: relative;
+  top:-110px;
+}
+
+#terapija p {
+  margin-bottom: 15px;
+  line-height: 1;
+}
+
+#cenovnik {
+  height: 100vh;
+}
+
+ /* KONTAKT SECTION */  
+#kontakt{
+height: 100vh;
+}
+
+#kontakt h1{
+font-size: 1.3rem;
+font-weight: bold;
+padding-bottom: 40px; 
+}
+
+#map {
+position: relative;
+width: 40%;
+}
+
+#soc_contact {
+justify-content: center;
+align-items: center;
+margin-right: 10em;
+}
+
+#map img {
+width: 90%;
+}
+.title_wraper {
+flex-direction: row;
+}
+
+.title_wraper {
+width: 100%;
+flex-direction: row;
+justify-content: center;
+}
+
+#soc_contact {
+display: flex;
+flex-direction: column;
+font-size: 13px; 
+margin:0 10px 10px 10px; 
+width:40%;
+font-size: 0.97rem;
+justify-content:baseline;
+align-items:baseline;
+}
+
+#soc_contact p{
+margin-bottom: 10px;
+font-size: 1rem;
+}
+
+#soc_contact img{
+width: 22px;
+}
+
+.btn:hover {
+transform: scale(1.5);
+} 
+  
+} 
+
 @media screen and (max-width: 1220px) {
 body.active {
 overflow-y: hidden;
@@ -463,8 +569,8 @@ overflow-x: hidden;
 width: 4.125em;
 display: inline-block;
 padding:2px;
-
 }
+
 
 .dotts img {
 width:  0.6em;
@@ -567,9 +673,8 @@ display:block !important;
 transform: scale(1.5);
 } 
 
-}      
-
- 
+}
+    
 @media screen and (min-width:750px) and (max-width:1220px) {
 
 .banners {
@@ -699,7 +804,7 @@ width: 6%;
 transform: scale(1.5);
 } 
    
-}           
+}
 
 @media screen and (max-width: 750px) {
 .content {
@@ -937,26 +1042,30 @@ width:10%;
 
 } 
 
-
 @media screen and (max-width: 412px) {
 
 body h2{
 font-size: 18px;
 }
+
 .navbar .navbar__logo {
 min-width: 45%;
 margin-right: 1%;
 }
+
 .navbar {
 margin-top: 0.125em;
 }
+
 h1 {
 font-size: 2rem;
 }
+
 .content {
 font-size: 0.7em;
 margin-top: 170px;
 }
+
 .banners {
 margin-top: 0px;
 position: relative;
@@ -969,13 +1078,9 @@ order: -1;
 }
     
 #aboutus{
-
 width: 100%;
 height: 130vh;
-
-
 }
-
 
 #aboutus .o_nama h2 {
 color: var(--orange);
@@ -983,17 +1088,15 @@ font-size: 1.3rem;
 font-weight: bold;
 position: relative;
 top:1em
-
 }
-
 
 .o_nama p {
 font-size: 1rem;
 color: var(--white);
 line-height: 1.3;
 margin-top: 10px;
-
 }
+
 
 .o_nama{
 width: 90%;
@@ -1001,17 +1104,19 @@ letter-spacing: 1px;
 padding:2px;
 margin-top: 50px;
 }
+
 #sta_lecimo{
 position: relative;
 height: 130vh;
 }
+
 .sta_lecimo{
 width: 95%;
-
 position: absolute;
 top:10%;
 letter-spacing: 0.063;
 }
+
 .sta_lecimo li{
 font-size: 1rem;
 color:var(--white);
@@ -1019,24 +1124,27 @@ line-height: 1.3;
 padding-left: 1em;
 padding-bottom: 0.1em;
 }
+
 .sta_lecimo  h2{
 color: var(--orange);
 font-size: 1.3rem;
 font-weight: 500;
 } 
+
 #terapija{
 width: 100%;
 height: 220vh;
 margin-top: 0;
 }
+
 .fizikalna_terapija {
 position: absolute;
 top:-40px;
 width: 95%;
-
 padding:0.938em;
 letter-spacing: 0.063rem;
 }  
+
 .fizikalna_terapija h2{
 color: var(--orange);
 font-size: 1.3rem;
@@ -1044,37 +1152,40 @@ font-weight: 500;
 margin-top: 3.125em;
 padding-bottom:0.6em
 }
+
 .fizikalna_terapija h3{
 color: var(--orange);
 font-size: 1.2rem;
 font-weight: 300;
 padding-bottom: 0.6em;
 }
+
 .fizikalna_terapija p {
 font-size: 0.9rem;
 color: var(--white);
 line-height: 1.3;
 padding-bottom: 1em;
-
 }
 
 #cenovnik{
 min-height: 120vh;
 }
+
 #cenovnik .cene_usluga h2 {
 color: var(--orange);
 font-size: 1.1rem;
 padding-bottom: 1.875em;
 font-weight: 500;
 margin-bottom: 0.2em;
-
 }
+
 .cene_usluga p {
 font-size: 1rem;
 color: var(--white);
 line-height: 1.3;
 padding: 0.3em;
 }
+
 .cene_usluga span{
 font-size:1rem;
 }
@@ -1087,101 +1198,101 @@ letter-spacing: 0.063rem;
 
 /* KONTAKT SECTION */
 #kontakt{
-    height: 135vh;
-    width: 100%;
-    position: absolute;
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
+height: 135vh;
+width: 100%;
+position: absolute;
+flex-direction: column;
+justify-content:center;
+align-items:center;
 }
+
 #kontakt h1{
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: var(--orange);
-    margin-top: 1px;
-    padding-bottom: 20px;
+font-size: 1.3rem;
+font-weight: bold;
+color: var(--orange);
+margin-top: 1px;
+padding-bottom: 20px;
 }
+
 .title_wraper {
-    width: 100%;
-    flex-direction: column;
-    position: relative;
-    top: -6.25em;
+width: 100%;
+flex-direction: column;
+position: relative;
+top: -6.25em;
 }
 #soc_contact {
-    display: flex;
-    flex-direction: column;
-    font-size: 13px;
-    /* margin:0 10px 10px 10px */
-    width:85%;
-    font-size: 0.8rem;
-    justify-content:center;
-    align-items:baseline;
+display: flex;
+flex-direction: column;
+font-size: 13px;
+/* margin:0 10px 10px 10px */
+width:85%;
+font-size: 0.8rem;
+justify-content:center;
+align-items:baseline;
 }
-#soc_contact p{
-    margin-bottom: 7px;
 
+#soc_contact p{
+margin-bottom: 7px;
 }
+
+
 #soc_contact img{
-    width: 22px;
+width: 22px;
 }
+
 #soc_contact span{
-    display:none;
-    }
-    #map {
-    position: absolute;
-    left: 13%;
-    bottom:-2%;
-    width:30%;
+display:none;
 }
+
+#map {
+position: absolute;
+left: 13%;
+bottom:-2%;
+width:30%;
+}
+
 #map img {
-    width: 220%;
-   
+width: 220%;
 }
 
 .lightbox {
-    width: 100%;
-    height: 90vh;
+width: 100%;
+height: 90vh;
 }
-    
- 
- 
-  
+
 .lightbox-item {
-    flex-direction: column; 
-    width: 90%;
+flex-direction: column; 
+width: 90%;
 justify-content:space-between;
 align-items:center;
-  
+
 }
 .btnRight img{
- 
-    width: 60%;
-    flex-direction: column;
-    position: relative;
-    top:-50px;
-    left:10px;
-  
+width: 60%;
+flex-direction: column;
+position: relative;
+top:-50px;
+left:10px;
 }
+
 .btnLeft img{
-    position: relative;
-    left:7px;
-    top:-50px;
-    width: 60%;
-    flex-direction: column;
-  
+position: relative;
+left:7px;
+top:-50px;
+width: 60%;
+flex-direction: column;
 }
+
 .lightbox-close img {
-    width: 50%;
-    position: relative;
-    bottom: 50px;
-
+width: 50%;
+position: relative;
+bottom: 50px;
 }
+
 .btn {
-
-    width: 14%;
-    
+width: 14%;
 }
-   
+
 }
 
 @media screen and (max-width: 300px) {
@@ -1189,12 +1300,15 @@ align-items:center;
 #aboutus {
 height: 160%;
 }
+
 #terapija {
 height: 280vh;
 }
+
 #sta_lecimo {
     height: 150vh;
 }
+
 #kontakt{
 height: 130vh;
 width: 100%;
@@ -1203,24 +1317,28 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 }
+
 .title {
 margin-top: 0;
 }
+
 #kontakt h1{
 font-size: 1.3rem;
 font-weight: bold;
 color: var(--orange);
 margin-top: 11px;
-
 }
+
 .title_wraper {
 flex-direction: column;
 position: relative;
 top: -6.25em;
 }
+
 #cenovnik {
     height: 170vh;
 }
+
 #soc_contact {
 display: flex;
 flex-direction: column;
@@ -1231,16 +1349,20 @@ font-size: 0.8rem;
 justify-content:baseline;
 align-items:baseline;
 }
+
 #soc_contact p{
 margin-bottom: 10px;
 font-size: 0.8rem;
 }
+
 #soc_contact img{
 width: 22px;
 }
+
 #soc_contact span{
 display:none;
 }
+
 #map {
 position: absolute  ;
 left: 13%;
@@ -1248,21 +1370,26 @@ bottom:-4em;
 width:30%;
 padding-top: 2px;
 }
+
 #map img {
 width: 270%;
 margin-top: 10px;
 transition: transform .2s;
 }
+
 #map img:hover {
 transform: scale(1.7);
 }
+
 .opis {
 display: none;
 }
+
 .lightbox {
 width: 100%;
 height: 100vh;
 }
+
 .lightbox-item {
 flex-direction: column; 
 width: 100%;
@@ -1277,6 +1404,7 @@ position: relative;
 top:-40px;
 left:10px;
 }
+
 .btnLeft img{
 position: relative;
 left:7px;
@@ -1284,13 +1412,202 @@ top:-40px;
 width: 60%;
 flex-direction: column;
 }
+
 .lightbox-close img {
 width: 35%;
 position: relative;
 bottom: 80px;
 }
+
 .btn {
     width: 13%;
 }
 
-}
+} 
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+ 
+   
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+    
+  
+
+
+
+
+
+
+
+    
+
+  
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+  
+
+
+
+
+
+   
+  
+
+
+   
+        
+        
+        
+    
+    
+        
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+
+    
+  
+   
+    
+
+
+
+   
+    
+   
+
+
+
+
+
+       
+  
+   
+
+
+    
+  
+   
+    
+
+
+  
+ 
+   
+    
+
+
+    
+        
+  
+     
+    
+
+        
+      
+         
+          
+          
+                
+      
+
+
+                
+            
+            
+
+
+
+
+      
+
+
