@@ -6,7 +6,7 @@ This project is my second fully responsive and mobile first website for a client
 
 Techologies🛠:<br> 1. Visual content:
 <b>Flexbox</b>, <b>Grid</b> and <b>Media Queries</b> <br>
-             2. Interactivity: <b>JavaScript</b> (carousel with indicators, dropdown menu, smooth scroll, modal gallery and animations)<br>
+             2. Interactivity: <b>Native JavaScript</b> (carousel with indicators, dropdown menu, smooth scroll, modal gallery and animations)<br>
 
            
 ![Screenshot](Unifizio.png)
