@@ -177,9 +177,11 @@ margin-left: 80px;
 right: 0;
 margin-right: 80px;
 }
+
 .dottBtn{
-  cursor: pointer;
+cursor: pointer;
 }
+
 /* Content */
 
 #aboutus {
