@@ -388,6 +388,7 @@ margin-right: 0.7em;
 color:var(--orange);
 padding-right:0.4em;
 }
+
 #soc_contact a{
 text-decoration: none;
 color: var(--white);
@@ -425,9 +426,7 @@ overflow: auto !important;
 
 .lightbox-item {
 display: flex;
-
 align-items:baseline;
-
 min-width:70%;
 height: 80vh;
 background-position: center;
@@ -486,17 +485,17 @@ transform: scale(1.5);
 }
 
 #terapija h2 {
- position: relative;
- top:-110px;
+position: relative;
+top:-110px;
 }
 
 #terapija p {
- margin-bottom: 15px;
- line-height: 1;
+margin-bottom: 15px;
+line-height: 1;
 }
 
 #cenovnik {
-  height: 100vh;
+height: 100vh;
 }
 
  /* KONTAKT SECTION */  
